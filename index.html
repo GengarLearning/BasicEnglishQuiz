@@ -7,27 +7,44 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="container">
-    <h1>Basic English Quiz</h1>
-    <div id="quiz-container">
-      <div id="slides-wrapper">
-        <div id="slides"></div>
+  <div class="main-layout">
+    <!-- Left: Quiz -->
+    <div class="container">
+      <h1>Basic English Quiz</h1>
+      <div id="quiz-container">
+        <div id="slides-wrapper">
+          <div id="slides"></div>
+        </div>
+        <div class="nav-buttons">
+          <button id="prev" disabled>&larr; Previous</button>
+          <button id="next">Next &rarr;</button>
+        </div>
       </div>
-      <div class="nav-buttons">
-        <button id="prev" disabled>&larr; Previous</button>
-        <button id="next">Next &rarr;</button>
+      
+      <!-- Celebration Box -->
+      <div id="celebration" class="hidden">
+        <h2>🎉 Congratulations! You answered all 50 questions correctly! 🎉</h2>
+        <img src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif" alt="Celebration" />
+        <p>You are mastering English grammar! Keep going!</p>
       </div>
-    </div>
-    <div id="celebration" class="hidden">
-      <h2>🎉 Congratulations! You got all questions right! 🎉</h2>
-      <img src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif" alt="Celebration" />
-    </div>
-  </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>This English quiz was created to support learners in improving their grammar and confidence in English. All rights reserved to <strong>Gengar</strong>.</p>
-  </footer>
+      <footer>
+        <p>This English quiz was designed to empower learners. All rights reserved to <strong>Gengar</strong>, created to help and inspire language learners.</p>
+      </footer>
+    </div>
+
+    <!-- Right: Grammar Help Panel -->
+    <aside class="sidebar">
+      <div id="grammar-tips">
+        <h2>📘 Grammar Tips</h2>
+        <div id="tips-content"></div>
+      </div>
+      <div id="motivation-box">
+        <h3>💡 Motivation</h3>
+        <p id="motivation-text">Keep going! Every question gets you closer to mastering English!</p>
+      </div>
+    </aside>
+  </div>
 
   <script src="script.js"></script>
 </body>
